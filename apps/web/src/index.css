@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-bg: #F0F4F8;
+    --color-bg-subtle: #E1E8F0;
+    --color-panel: #FFFFFF;
+    --color-panel-highlight: #EBF2F7;
+    --color-cyan: #0284C7;
+    --color-emerald: #0D9488;
+    --color-text: #0F172A;
+    --color-muted: #64748B;
+    --color-border: #CBD5E1;
+    --color-critical: #E11D48;
+    --color-warning: #D97706;
+    --color-success: #0D9488;
+  }
+
+  .dark {
+    --color-bg: #071522;
+    --color-bg-subtle: #0D2233;
+    --color-panel: #12304A;
+    --color-panel-highlight: #19384B;
+    --color-cyan: #42D9F5;
+    --color-emerald: #17B897;
+    --color-text: #F5FAFF;
+    --color-muted: #A6BACD;
+    --color-border: #28475C;
+    --color-critical: #F07178;
+    --color-warning: #F2BC63;
+    --color-success: #17B897;
+  }
+
+  * {
+    border-color: var(--color-border);
+  }
+
+  body {
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11", "tnum";
+    background-color: var(--color-bg);
+    color: var(--color-text);
+  }
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #28475C;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #42D9F5;
+}
+
+/* Pulsing radar indicator */
+@keyframes radar-ping {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+}
+
+.radar-dot {
+  position: relative;
+}
+.radar-dot::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 9999px;
+  background: currentColor;
+  animation: radar-ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
