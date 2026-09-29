@@ -19,7 +19,7 @@ export const CommandCenterView: React.FC = () => {
     refetch,
   } = useQuery({
     queryKey: ['latest-forecast', activeLeadTime],
-    queryFn: () => api.getLatestForecast(),
+    queryFn: () => api.runForecast({ lead_time_hours: activeLeadTime }),
   });
 
   return (
