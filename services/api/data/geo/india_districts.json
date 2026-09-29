@@ -1,0 +1,1380 @@
+{
+  "type": "FeatureCollection",
+  "name": "India_Meteorological_Districts_REGNOVA",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "MH_MUMBAI",
+      "properties": {
+        "district_id": "MH_MUMBAI",
+        "district_name": "Mumbai City",
+        "state_name": "Maharashtra",
+        "centroid_lat": 18.92,
+        "centroid_lon": 72.83,
+        "terrain_elevation_m": 14.0,
+        "coastal_proximity_km": 0.0,
+        "climatology_mean_jjas_mm": 2150.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.1975,
+              18.92
+            ],
+            [
+              73.0899,
+              19.1304
+            ],
+            [
+              72.83,
+              19.2175
+            ],
+            [
+              72.5701,
+              19.1304
+            ],
+            [
+              72.4625,
+              18.92
+            ],
+            [
+              72.5701,
+              18.7096
+            ],
+            [
+              72.83,
+              18.6225
+            ],
+            [
+              73.0899,
+              18.7096
+            ],
+            [
+              73.1975,
+              18.92
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MH_PUNE",
+      "properties": {
+        "district_id": "MH_PUNE",
+        "district_name": "Pune",
+        "state_name": "Maharashtra",
+        "centroid_lat": 18.52,
+        "centroid_lon": 73.85,
+        "terrain_elevation_m": 560.0,
+        "coastal_proximity_km": 110.0,
+        "climatology_mean_jjas_mm": 720.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.2175,
+              18.52
+            ],
+            [
+              74.1099,
+              18.7304
+            ],
+            [
+              73.85,
+              18.8175
+            ],
+            [
+              73.5901,
+              18.7304
+            ],
+            [
+              73.4825,
+              18.52
+            ],
+            [
+              73.5901,
+              18.3096
+            ],
+            [
+              73.85,
+              18.2225
+            ],
+            [
+              74.1099,
+              18.3096
+            ],
+            [
+              74.2175,
+              18.52
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MH_NAGPUR",
+      "properties": {
+        "district_id": "MH_NAGPUR",
+        "district_name": "Nagpur",
+        "state_name": "Maharashtra",
+        "centroid_lat": 21.14,
+        "centroid_lon": 79.08,
+        "terrain_elevation_m": 310.0,
+        "coastal_proximity_km": 600.0,
+        "climatology_mean_jjas_mm": 1050.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.4475,
+              21.14
+            ],
+            [
+              79.3399,
+              21.3504
+            ],
+            [
+              79.08,
+              21.4375
+            ],
+            [
+              78.8201,
+              21.3504
+            ],
+            [
+              78.7125,
+              21.14
+            ],
+            [
+              78.8201,
+              20.9296
+            ],
+            [
+              79.08,
+              20.8425
+            ],
+            [
+              79.3399,
+              20.9296
+            ],
+            [
+              79.4475,
+              21.14
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "KL_WAYANAD",
+      "properties": {
+        "district_id": "KL_WAYANAD",
+        "district_name": "Wayanad",
+        "state_name": "Kerala",
+        "centroid_lat": 11.68,
+        "centroid_lon": 76.13,
+        "terrain_elevation_m": 850.0,
+        "coastal_proximity_km": 65.0,
+        "climatology_mean_jjas_mm": 2600.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.4975,
+              11.68
+            ],
+            [
+              76.3899,
+              11.8904
+            ],
+            [
+              76.13,
+              11.9775
+            ],
+            [
+              75.8701,
+              11.8904
+            ],
+            [
+              75.7625,
+              11.68
+            ],
+            [
+              75.8701,
+              11.4696
+            ],
+            [
+              76.13,
+              11.3825
+            ],
+            [
+              76.3899,
+              11.4696
+            ],
+            [
+              76.4975,
+              11.68
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "KL_ERNAKULAM",
+      "properties": {
+        "district_id": "KL_ERNAKULAM",
+        "district_name": "Ernakulam",
+        "state_name": "Kerala",
+        "centroid_lat": 9.98,
+        "centroid_lon": 76.3,
+        "terrain_elevation_m": 10.0,
+        "coastal_proximity_km": 5.0,
+        "climatology_mean_jjas_mm": 2200.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.6675,
+              9.98
+            ],
+            [
+              76.5599,
+              10.1904
+            ],
+            [
+              76.3,
+              10.2775
+            ],
+            [
+              76.0401,
+              10.1904
+            ],
+            [
+              75.9325,
+              9.98
+            ],
+            [
+              76.0401,
+              9.7696
+            ],
+            [
+              76.3,
+              9.6825
+            ],
+            [
+              76.5599,
+              9.7696
+            ],
+            [
+              76.6675,
+              9.98
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "KL_TVM",
+      "properties": {
+        "district_id": "KL_TVM",
+        "district_name": "Thiruvananthapuram",
+        "state_name": "Kerala",
+        "centroid_lat": 8.52,
+        "centroid_lon": 76.93,
+        "terrain_elevation_m": 16.0,
+        "coastal_proximity_km": 3.0,
+        "climatology_mean_jjas_mm": 1820.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2975,
+              8.52
+            ],
+            [
+              77.1899,
+              8.7304
+            ],
+            [
+              76.93,
+              8.8175
+            ],
+            [
+              76.6701,
+              8.7304
+            ],
+            [
+              76.5625,
+              8.52
+            ],
+            [
+              76.6701,
+              8.3096
+            ],
+            [
+              76.93,
+              8.2225
+            ],
+            [
+              77.1899,
+              8.3096
+            ],
+            [
+              77.2975,
+              8.52
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "KA_UDUPI",
+      "properties": {
+        "district_id": "KA_UDUPI",
+        "district_name": "Udupi",
+        "state_name": "Karnataka",
+        "centroid_lat": 13.34,
+        "centroid_lon": 74.74,
+        "terrain_elevation_m": 30.0,
+        "coastal_proximity_km": 5.0,
+        "climatology_mean_jjas_mm": 3800.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              75.1075,
+              13.34
+            ],
+            [
+              74.9999,
+              13.5504
+            ],
+            [
+              74.74,
+              13.6375
+            ],
+            [
+              74.4801,
+              13.5504
+            ],
+            [
+              74.3725,
+              13.34
+            ],
+            [
+              74.4801,
+              13.1296
+            ],
+            [
+              74.74,
+              13.0425
+            ],
+            [
+              74.9999,
+              13.1296
+            ],
+            [
+              75.1075,
+              13.34
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "KA_BLR",
+      "properties": {
+        "district_id": "KA_BLR",
+        "district_name": "Bengaluru Urban",
+        "state_name": "Karnataka",
+        "centroid_lat": 12.97,
+        "centroid_lon": 77.59,
+        "terrain_elevation_m": 920.0,
+        "coastal_proximity_km": 280.0,
+        "climatology_mean_jjas_mm": 620.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.9575,
+              12.97
+            ],
+            [
+              77.8499,
+              13.1804
+            ],
+            [
+              77.59,
+              13.2675
+            ],
+            [
+              77.3301,
+              13.1804
+            ],
+            [
+              77.2225,
+              12.97
+            ],
+            [
+              77.3301,
+              12.7596
+            ],
+            [
+              77.59,
+              12.6725
+            ],
+            [
+              77.8499,
+              12.7596
+            ],
+            [
+              77.9575,
+              12.97
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "OD_PURI",
+      "properties": {
+        "district_id": "OD_PURI",
+        "district_name": "Puri",
+        "state_name": "Odisha",
+        "centroid_lat": 19.81,
+        "centroid_lon": 85.83,
+        "terrain_elevation_m": 15.0,
+        "coastal_proximity_km": 2.0,
+        "climatology_mean_jjas_mm": 1100.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              86.1975,
+              19.81
+            ],
+            [
+              86.0899,
+              20.0204
+            ],
+            [
+              85.83,
+              20.1075
+            ],
+            [
+              85.5701,
+              20.0204
+            ],
+            [
+              85.4625,
+              19.81
+            ],
+            [
+              85.5701,
+              19.5996
+            ],
+            [
+              85.83,
+              19.5125
+            ],
+            [
+              86.0899,
+              19.5996
+            ],
+            [
+              86.1975,
+              19.81
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "OD_BBS",
+      "properties": {
+        "district_id": "OD_BBS",
+        "district_name": "Khordha (Bhubaneswar)",
+        "state_name": "Odisha",
+        "centroid_lat": 20.29,
+        "centroid_lon": 85.82,
+        "terrain_elevation_m": 45.0,
+        "coastal_proximity_km": 50.0,
+        "climatology_mean_jjas_mm": 1250.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              86.1875,
+              20.29
+            ],
+            [
+              86.0799,
+              20.5004
+            ],
+            [
+              85.82,
+              20.5875
+            ],
+            [
+              85.5601,
+              20.5004
+            ],
+            [
+              85.4525,
+              20.29
+            ],
+            [
+              85.5601,
+              20.0796
+            ],
+            [
+              85.82,
+              19.9925
+            ],
+            [
+              86.0799,
+              20.0796
+            ],
+            [
+              86.1875,
+              20.29
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WB_KOLKATA",
+      "properties": {
+        "district_id": "WB_KOLKATA",
+        "district_name": "Kolkata",
+        "state_name": "West Bengal",
+        "centroid_lat": 22.57,
+        "centroid_lon": 88.36,
+        "terrain_elevation_m": 9.0,
+        "coastal_proximity_km": 80.0,
+        "climatology_mean_jjas_mm": 1350.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.7275,
+              22.57
+            ],
+            [
+              88.6199,
+              22.7804
+            ],
+            [
+              88.36,
+              22.8675
+            ],
+            [
+              88.1001,
+              22.7804
+            ],
+            [
+              87.9925,
+              22.57
+            ],
+            [
+              88.1001,
+              22.3596
+            ],
+            [
+              88.36,
+              22.2725
+            ],
+            [
+              88.6199,
+              22.3596
+            ],
+            [
+              88.7275,
+              22.57
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "WB_DARJEELING",
+      "properties": {
+        "district_id": "WB_DARJEELING",
+        "district_name": "Darjeeling",
+        "state_name": "West Bengal",
+        "centroid_lat": 27.04,
+        "centroid_lon": 88.26,
+        "terrain_elevation_m": 2042.0,
+        "coastal_proximity_km": 550.0,
+        "climatology_mean_jjas_mm": 2400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.6275,
+              27.04
+            ],
+            [
+              88.5199,
+              27.2504
+            ],
+            [
+              88.26,
+              27.3375
+            ],
+            [
+              88.0001,
+              27.2504
+            ],
+            [
+              87.8925,
+              27.04
+            ],
+            [
+              88.0001,
+              26.8296
+            ],
+            [
+              88.26,
+              26.7425
+            ],
+            [
+              88.5199,
+              26.8296
+            ],
+            [
+              88.6275,
+              27.04
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MP_BHOPAL",
+      "properties": {
+        "district_id": "MP_BHOPAL",
+        "district_name": "Bhopal",
+        "state_name": "Madhya Pradesh",
+        "centroid_lat": 23.25,
+        "centroid_lon": 77.41,
+        "terrain_elevation_m": 527.0,
+        "coastal_proximity_km": 600.0,
+        "climatology_mean_jjas_mm": 950.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.7775,
+              23.25
+            ],
+            [
+              77.6699,
+              23.4604
+            ],
+            [
+              77.41,
+              23.5475
+            ],
+            [
+              77.1501,
+              23.4604
+            ],
+            [
+              77.0425,
+              23.25
+            ],
+            [
+              77.1501,
+              23.0396
+            ],
+            [
+              77.41,
+              22.9525
+            ],
+            [
+              77.6699,
+              23.0396
+            ],
+            [
+              77.7775,
+              23.25
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MP_INDORE",
+      "properties": {
+        "district_id": "MP_INDORE",
+        "district_name": "Indore",
+        "state_name": "Madhya Pradesh",
+        "centroid_lat": 22.71,
+        "centroid_lon": 75.85,
+        "terrain_elevation_m": 553.0,
+        "coastal_proximity_km": 480.0,
+        "climatology_mean_jjas_mm": 890.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.2175,
+              22.71
+            ],
+            [
+              76.1099,
+              22.9204
+            ],
+            [
+              75.85,
+              23.0075
+            ],
+            [
+              75.5901,
+              22.9204
+            ],
+            [
+              75.4825,
+              22.71
+            ],
+            [
+              75.5901,
+              22.4996
+            ],
+            [
+              75.85,
+              22.4125
+            ],
+            [
+              76.1099,
+              22.4996
+            ],
+            [
+              76.2175,
+              22.71
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "RJ_JAIPUR",
+      "properties": {
+        "district_id": "RJ_JAIPUR",
+        "district_name": "Jaipur",
+        "state_name": "Rajasthan",
+        "centroid_lat": 26.91,
+        "centroid_lon": 75.78,
+        "terrain_elevation_m": 431.0,
+        "coastal_proximity_km": 750.0,
+        "climatology_mean_jjas_mm": 520.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.1475,
+              26.91
+            ],
+            [
+              76.0399,
+              27.1204
+            ],
+            [
+              75.78,
+              27.2075
+            ],
+            [
+              75.5201,
+              27.1204
+            ],
+            [
+              75.4125,
+              26.91
+            ],
+            [
+              75.5201,
+              26.6996
+            ],
+            [
+              75.78,
+              26.6125
+            ],
+            [
+              76.0399,
+              26.6996
+            ],
+            [
+              76.1475,
+              26.91
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "RJ_JODHPUR",
+      "properties": {
+        "district_id": "RJ_JODHPUR",
+        "district_name": "Jodhpur",
+        "state_name": "Rajasthan",
+        "centroid_lat": 26.29,
+        "centroid_lon": 73.02,
+        "terrain_elevation_m": 231.0,
+        "coastal_proximity_km": 580.0,
+        "climatology_mean_jjas_mm": 310.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.3875,
+              26.29
+            ],
+            [
+              73.2799,
+              26.5004
+            ],
+            [
+              73.02,
+              26.5875
+            ],
+            [
+              72.7601,
+              26.5004
+            ],
+            [
+              72.6525,
+              26.29
+            ],
+            [
+              72.7601,
+              26.0796
+            ],
+            [
+              73.02,
+              25.9925
+            ],
+            [
+              73.2799,
+              26.0796
+            ],
+            [
+              73.3875,
+              26.29
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DL_NEW_DELHI",
+      "properties": {
+        "district_id": "DL_NEW_DELHI",
+        "district_name": "New Delhi",
+        "state_name": "Delhi",
+        "centroid_lat": 28.61,
+        "centroid_lon": 77.2,
+        "terrain_elevation_m": 216.0,
+        "coastal_proximity_km": 1100.0,
+        "climatology_mean_jjas_mm": 650.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.5675,
+              28.61
+            ],
+            [
+              77.4599,
+              28.8204
+            ],
+            [
+              77.2,
+              28.9075
+            ],
+            [
+              76.9401,
+              28.8204
+            ],
+            [
+              76.8325,
+              28.61
+            ],
+            [
+              76.9401,
+              28.3996
+            ],
+            [
+              77.2,
+              28.3125
+            ],
+            [
+              77.4599,
+              28.3996
+            ],
+            [
+              77.5675,
+              28.61
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AS_GUWAHATI",
+      "properties": {
+        "district_id": "AS_GUWAHATI",
+        "district_name": "Kamrup Metro (Guwahati)",
+        "state_name": "Assam",
+        "centroid_lat": 26.14,
+        "centroid_lon": 91.73,
+        "terrain_elevation_m": 55.0,
+        "coastal_proximity_km": 400.0,
+        "climatology_mean_jjas_mm": 1600.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              92.0975,
+              26.14
+            ],
+            [
+              91.9899,
+              26.3504
+            ],
+            [
+              91.73,
+              26.4375
+            ],
+            [
+              91.4701,
+              26.3504
+            ],
+            [
+              91.3625,
+              26.14
+            ],
+            [
+              91.4701,
+              25.9296
+            ],
+            [
+              91.73,
+              25.8425
+            ],
+            [
+              91.9899,
+              25.9296
+            ],
+            [
+              92.0975,
+              26.14
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "TN_CHENNAI",
+      "properties": {
+        "district_id": "TN_CHENNAI",
+        "district_name": "Chennai",
+        "state_name": "Tamil Nadu",
+        "centroid_lat": 13.08,
+        "centroid_lon": 80.27,
+        "terrain_elevation_m": 6.0,
+        "coastal_proximity_km": 0.0,
+        "climatology_mean_jjas_mm": 420.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.6375,
+              13.08
+            ],
+            [
+              80.5299,
+              13.2904
+            ],
+            [
+              80.27,
+              13.3775
+            ],
+            [
+              80.0101,
+              13.2904
+            ],
+            [
+              79.9025,
+              13.08
+            ],
+            [
+              80.0101,
+              12.8696
+            ],
+            [
+              80.27,
+              12.7825
+            ],
+            [
+              80.5299,
+              12.8696
+            ],
+            [
+              80.6375,
+              13.08
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "TG_HYD",
+      "properties": {
+        "district_id": "TG_HYD",
+        "district_name": "Hyderabad",
+        "state_name": "Telangana",
+        "centroid_lat": 17.38,
+        "centroid_lon": 78.48,
+        "terrain_elevation_m": 542.0,
+        "coastal_proximity_km": 270.0,
+        "climatology_mean_jjas_mm": 610.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.8475,
+              17.38
+            ],
+            [
+              78.7399,
+              17.5904
+            ],
+            [
+              78.48,
+              17.6775
+            ],
+            [
+              78.2201,
+              17.5904
+            ],
+            [
+              78.1125,
+              17.38
+            ],
+            [
+              78.2201,
+              17.1696
+            ],
+            [
+              78.48,
+              17.0825
+            ],
+            [
+              78.7399,
+              17.1696
+            ],
+            [
+              78.8475,
+              17.38
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "GJ_AHMEDABAD",
+      "properties": {
+        "district_id": "GJ_AHMEDABAD",
+        "district_name": "Ahmedabad",
+        "state_name": "Gujarat",
+        "centroid_lat": 23.02,
+        "centroid_lon": 72.57,
+        "terrain_elevation_m": 53.0,
+        "coastal_proximity_km": 90.0,
+        "climatology_mean_jjas_mm": 740.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.9375,
+              23.02
+            ],
+            [
+              72.8299,
+              23.2304
+            ],
+            [
+              72.57,
+              23.3175
+            ],
+            [
+              72.3101,
+              23.2304
+            ],
+            [
+              72.2025,
+              23.02
+            ],
+            [
+              72.3101,
+              22.8096
+            ],
+            [
+              72.57,
+              22.7225
+            ],
+            [
+              72.8299,
+              22.8096
+            ],
+            [
+              72.9375,
+              23.02
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "UP_LUCKNOW",
+      "properties": {
+        "district_id": "UP_LUCKNOW",
+        "district_name": "Lucknow",
+        "state_name": "Uttar Pradesh",
+        "centroid_lat": 26.84,
+        "centroid_lon": 80.94,
+        "terrain_elevation_m": 123.0,
+        "coastal_proximity_km": 820.0,
+        "climatology_mean_jjas_mm": 880.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              81.3075,
+              26.84
+            ],
+            [
+              81.1999,
+              27.0504
+            ],
+            [
+              80.94,
+              27.1375
+            ],
+            [
+              80.6801,
+              27.0504
+            ],
+            [
+              80.5725,
+              26.84
+            ],
+            [
+              80.6801,
+              26.6296
+            ],
+            [
+              80.94,
+              26.5425
+            ],
+            [
+              81.1999,
+              26.6296
+            ],
+            [
+              81.3075,
+              26.84
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BR_PATNA",
+      "properties": {
+        "district_id": "BR_PATNA",
+        "district_name": "Patna",
+        "state_name": "Bihar",
+        "centroid_lat": 25.59,
+        "centroid_lon": 85.13,
+        "terrain_elevation_m": 53.0,
+        "coastal_proximity_km": 510.0,
+        "climatology_mean_jjas_mm": 1020.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              85.4975,
+              25.59
+            ],
+            [
+              85.3899,
+              25.8004
+            ],
+            [
+              85.13,
+              25.8875
+            ],
+            [
+              84.8701,
+              25.8004
+            ],
+            [
+              84.7625,
+              25.59
+            ],
+            [
+              84.8701,
+              25.3796
+            ],
+            [
+              85.13,
+              25.2925
+            ],
+            [
+              85.3899,
+              25.3796
+            ],
+            [
+              85.4975,
+              25.59
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "GA_NORTH_GOA",
+      "properties": {
+        "district_id": "GA_NORTH_GOA",
+        "district_name": "North Goa (Panaji)",
+        "state_name": "Goa",
+        "centroid_lat": 15.49,
+        "centroid_lon": 73.82,
+        "terrain_elevation_m": 7.0,
+        "coastal_proximity_km": 0.0,
+        "climatology_mean_jjas_mm": 2900.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.1875,
+              15.49
+            ],
+            [
+              74.0799,
+              15.7004
+            ],
+            [
+              73.82,
+              15.7875
+            ],
+            [
+              73.5601,
+              15.7004
+            ],
+            [
+              73.4525,
+              15.49
+            ],
+            [
+              73.5601,
+              15.2796
+            ],
+            [
+              73.82,
+              15.1925
+            ],
+            [
+              74.0799,
+              15.2796
+            ],
+            [
+              74.1875,
+              15.49
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

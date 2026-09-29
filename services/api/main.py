@@ -36,7 +36,7 @@ from packages.contracts.schemas import (
     SystemMetadataResponse,
     HealthCheckResponse,
 )
-from services.api.database import engine, Base, get_db, SessionLocal
+from services.api.database import engine, Base, get_db, SessionLocal, get_database_status
 from services.api.models import (
     User,
     District,
@@ -352,7 +352,15 @@ def health_check():
 
 @app.get("/api/v1/ready", tags=["System"])
 def readiness_check():
-    return {"ready": True, "service": "REGNOVA Backend", "version": "1.0.0"}
+    db_status = get_database_status()
+    return {
+        "ready": True,
+        "service": "REGNOVA Backend",
+        "version": "1.0.0",
+        "database": db_status["database_target"],
+        "is_supabase": db_status["is_supabase"],
+        "dialect": db_status["dialect"],
+    }
 
 
 @app.get("/api/v1/metadata", response_model=SystemMetadataResponse, tags=["System"])
@@ -555,6 +563,41 @@ def run_forecast_correction(req: ForecastRunRequest, db: Session = Depends(get_d
         districts=district_items,
         notes="Regime-aware post-processed forecast using EXPERT-MIX fusion and RAIN-CAL calibration.",
     )
+
+    # Persist Forecast Run and District Forecasts in Supabase PostgreSQL
+    try:
+        fc_record = ForecastRun(
+            id=run_response.forecast_run_id,
+            issue_time=issue_time,
+            valid_time=valid_time,
+            lead_time_hours=req.lead_time_hours,
+            data_mode=req.data_mode.value,
+            primary_regime=regime_res.primary_regime.value,
+            regime_probabilities=regime_res.regime_probabilities.model_dump(mode="json"),
+            gating_weights=regime_res.gating_weights,
+            model_version="REGNOVA-v1.0.0",
+        )
+        db.add(fc_record)
+        for item in district_items:
+            df_record = DistrictForecast(
+                forecast_run_id=run_response.forecast_run_id,
+                district_id=item.district_id,
+                raw_nwp_rainfall_mm=item.raw_nwp_rainfall_mm,
+                global_ml_rainfall_mm=item.global_ml_rainfall_mm,
+                regnova_corrected_rainfall_mm=item.regnova_corrected_rainfall_mm,
+                observed_rainfall_mm=item.observed_rainfall_mm,
+                prob_heavy_rain_gt35_pct=item.prob_heavy_rain_gt35_pct,
+                prob_vheavy_rain_gt64_pct=item.prob_vheavy_rain_gt64_pct,
+                prob_extheavy_rain_gt115_pct=item.prob_extheavy_rain_gt115_pct,
+                uncertainty_std_mm=item.uncertainty_std_mm,
+                expert_weights=item.expert_weights,
+            )
+            db.add(df_record)
+        db.commit()
+    except Exception as exc:
+        db.rollback()
+        print(f"[Forecast Persistence Error]: {exc}")
+
     cached_latest_forecast = run_response
     return run_response
 
@@ -609,11 +652,48 @@ def get_latest_evaluation():
 
 
 # -------------------------------------------------------------
-# AGENT ORCHESTRATION & SIH DEMO ENDPOINTS
+# GEOSPATIAL BOUNDARIES ENDPOINTS
+# -------------------------------------------------------------
+
+@app.get("/api/v1/geo/states", tags=["Geospatial"])
+def get_india_states_geojson():
+    geo_path = os.path.join(current_dir, "data", "geo", "india_states.json")
+    if os.path.exists(geo_path):
+        import json
+        with open(geo_path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return {"type": "FeatureCollection", "features": []}
+
+
+@app.get("/api/v1/geo/districts", tags=["Geospatial"])
+def get_districts_geojson():
+    geo_path = os.path.join(current_dir, "data", "geo", "india_districts.json")
+    if os.path.exists(geo_path):
+        import json
+        with open(geo_path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return {"type": "FeatureCollection", "features": []}
+
+
+@app.get("/api/v1/geo/world", tags=["Geospatial"])
+def get_world_context_geojson():
+    geo_path = os.path.join(current_dir, "data", "geo", "world_context.json")
+    if os.path.exists(geo_path):
+        import json
+        with open(geo_path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return {"type": "FeatureCollection", "features": []}
+
+
+# -------------------------------------------------------------
+# AGENT ORCHESTRATION & HISTORY ENDPOINTS
 # -------------------------------------------------------------
 
 @app.post("/api/v1/agents/workflows/run", response_model=AgentRunResponse, tags=["Agents"])
-def run_agent_workflow(data_mode: DataMode = DataMode.SYNTHETIC_DEMO):
+def run_agent_workflow(
+    data_mode: DataMode = DataMode.SYNTHETIC_DEMO,
+    db: Session = Depends(get_db)
+):
     preds = AtmosphericPredictors(
         precipitable_water_mm=64.0,
         relative_humidity_850hpa_pct=88.0,
@@ -623,12 +703,51 @@ def run_agent_workflow(data_mode: DataMode = DataMode.SYNTHETIC_DEMO):
         vorticity_850hpa_s1=4.0,
         monsoon_trough_latitude_deg=21.0,
     )
-    return agent_orchestrator.run_full_monsoon_workflow(
+    res = agent_orchestrator.run_full_monsoon_workflow(
         raw_dataset_summary={"total_records": 360, "format": "NetCDF/CSV"},
         atmospheric_inputs=preds,
         districts_features=SAMPLE_DISTRICTS,
         data_mode=data_mode,
     )
+
+    # Persist in Database
+    try:
+        agent_record = AgentRun(
+            id=res.run_id,
+            workflow_name=res.workflow_name,
+            status=res.status,
+            started_at=res.started_at,
+            completed_at=res.completed_at,
+            data_mode=data_mode.value,
+            events_log=[e.model_dump(mode='json') for e in res.events],
+            summary_report=res.summary_report,
+            evidence=res.evidence,
+            approved_by=res.approved_by,
+        )
+        db.add(agent_record)
+        db.commit()
+    except Exception as exc:
+        db.rollback()
+        print(f"[Agent Persistence Error]: {exc}")
+
+    return res
+
+
+@app.get("/api/v1/agents/runs", tags=["Agents"])
+def get_agent_runs_history(limit: int = 10, db: Session = Depends(get_db)):
+    runs = db.query(AgentRun).order_by(AgentRun.started_at.desc()).limit(limit).all()
+    return [
+        {
+            "run_id": r.id,
+            "workflow_name": r.workflow_name,
+            "status": r.status,
+            "started_at": r.started_at.isoformat() if r.started_at else None,
+            "completed_at": r.completed_at.isoformat() if r.completed_at else None,
+            "summary_report": r.summary_report,
+            "events_count": len(r.events_log or []),
+        }
+        for r in runs
+    ]
 
 
 @app.post("/api/v1/sih-demo/run", tags=["SIH Demo"])
@@ -641,10 +760,10 @@ def run_sih_one_click_demo():
     db = SessionLocal()
     try:
         cached_latest_forecast = run_forecast_correction(req, db)
+        agent_res = run_agent_workflow(data_mode=DataMode.SYNTHETIC_DEMO, db=db)
     finally:
         db.close()
     cached_latest_eval = run_evaluation()
-    agent_res = run_agent_workflow(data_mode=DataMode.SYNTHETIC_DEMO)
 
     return {
         "status": "SIH_DEMO_COMPLETED",

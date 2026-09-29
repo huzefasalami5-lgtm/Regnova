@@ -77,4 +77,28 @@ export const api = {
     if (!res.ok) throw new Error('Failed to execute SIH demonstration');
     return res.json();
   },
+
+  async getIndiaStatesGeoJson(): Promise<any> {
+    const res = await fetch(`${API_BASE}/geo/states`);
+    if (!res.ok) throw new Error('Failed to load state boundary GeoJSON');
+    return res.json();
+  },
+
+  async getDistrictsGeoJson(): Promise<any> {
+    const res = await fetch(`${API_BASE}/geo/districts`);
+    if (!res.ok) throw new Error('Failed to load district boundary GeoJSON');
+    return res.json();
+  },
+
+  async getWorldContextGeoJson(): Promise<any> {
+    const res = await fetch(`${API_BASE}/geo/world`);
+    if (!res.ok) throw new Error('Failed to load world boundary GeoJSON');
+    return res.json();
+  },
+
+  async getAgentRunsHistory(): Promise<any[]> {
+    const res = await fetch(`${API_BASE}/agents/runs`);
+    if (!res.ok) throw new Error('Failed to load agent runs history');
+    return res.json();
+  },
 };

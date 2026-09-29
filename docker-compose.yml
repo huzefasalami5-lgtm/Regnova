@@ -4,14 +4,12 @@ services:
   api:
     build:
       context: .
-      dockerfile: infra/Dockerfile.api
+      dockerfile: services/api/Dockerfile
     ports:
       - "8000:8000"
     environment:
-      - DATABASE_URL=sqlite:///./regnova.db
+      - DATABASE_URL=${DATABASE_URL:-sqlite:///./regnova.db}
       - ENVIRONMENT=production
-    volumes:
-      - regnova_data:/app/data
     restart: unless-stopped
 
   web:
@@ -23,6 +21,3 @@ services:
     depends_on:
       - api
     restart: unless-stopped
-
-volumes:
-  regnova_data:

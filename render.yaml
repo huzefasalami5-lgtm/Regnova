@@ -1,0 +1,32 @@
+services:
+  # Python FastAPI Backend with ML
+  - type: web
+    name: regnova-api
+    env: python
+    region: singapore
+    plan: free
+    buildCommand: pip install -r requirements.txt && pip install psycopg2-binary supabase
+    startCommand: uvicorn services.api.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.8
+      - key: DATABASE_URL
+        sync: false
+      - key: ENVIRONMENT
+        value: production
+
+  # React Frontend on Vercel or Static Web Service
+  - type: web
+    name: regnova-web
+    env: static
+    region: singapore
+    plan: free
+    buildCommand: cd apps/web && npm install && npm run build
+    staticPublishPath: apps/web/dist
+    routes:
+      - type: rewrite
+        source: /api/*
+        destination: https://regnova-api.onrender.com/api/*
+      - type: rewrite
+        source: /*
+        destination: /index.html

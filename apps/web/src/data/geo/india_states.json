@@ -1,0 +1,1574 @@
+{
+  "type": "FeatureCollection",
+  "name": "India_States_UTs_REGNOVA",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "IN-MH",
+      "properties": {
+        "state_id": "IN-MH",
+        "state_name": "Maharashtra",
+        "category": "State",
+        "met_subdivision": "Konkan & Goa / Madhya Maharashtra / Marathwada / Vidarbha",
+        "country": "India"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.6,
+              18.8
+            ],
+            [
+              72.8,
+              19.8
+            ],
+            [
+              73.5,
+              20.3
+            ],
+            [
+              74.5,
+              21.4
+            ],
+            [
+              76.5,
+              21.6
+            ],
+            [
+              78.8,
+              21.8
+            ],
+            [
+              80.2,
+              21.3
+            ],
+            [
+              80.6,
+              19.5
+            ],
+            [
+              80.0,
+              18.8
+            ],
+            [
+              78.5,
+              18.2
+            ],
+            [
+              76.0,
+              17.5
+            ],
+            [
+              74.2,
+              15.8
+            ],
+            [
+              73.5,
+              15.8
+            ],
+            [
+              73.0,
+              17.0
+            ],
+            [
+              72.6,
+              18.8
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "IN-KL",
+      "properties": {
+        "state_id": "IN-KL",
+        "state_name": "Kerala",
+        "category": "State",
+        "met_subdivision": "Kerala & Mahe",
+        "country": "India"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.9,
+              12.8
+            ],
+            [
+              75.5,
+              12.4
+            ],
+            [
+              76.0,
+              11.8
+            ],
+            [
+              76.6,
+              11.6
+            ],
+            [
+              77.0,
+              10.4
+            ],
+            [
+              77.3,
+              9.4
+            ],
+            [
+              77.4,
+              8.5
+            ],
+            [
+              76.9,
+              8.3
+            ],
+            [
+              76.5,
+              9.2
+            ],
+            [
+              76.1,
+              10.1
+            ],
+            [
+              75.6,
+              11.2
+            ],
+            [
+              74.9,
+              12.8
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "IN-KA",
+      "properties": {
+        "state_id": "IN-KA",
+        "state_name": "Karnataka",
+        "category": "State",
+        "met_subdivision": "Coastal Karnataka / North Interior / South Interior",
+        "country": "India"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.1,
+              14.9
+            ],
+            [
+              74.8,
+              15.6
+            ],
+            [
+              75.5,
+              17.5
+            ],
+            [
+              77.2,
+              17.8
+            ],
+            [
+              77.7,
+              16.5
+            ],
+            [
+              77.4,
+              15.0
+            ],
+            [
+              78.3,
+              13.8
+            ],
+            [
+              78.0,
+              12.7
+            ],
+            [
+              77.0,
+              11.8
+            ],
+            [
+              76.2,
+              11.9
+            ],
+            [
+              74.7,
+              13.2
+            ],
+            [
+              74.1,
+              14.9
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "IN-TN",
+      "properties": {
+        "state_id": "IN-TN",
+        "state_name": "Tamil Nadu",
+        "category": "State",
+        "met_subdivision": "Tamil Nadu, Puducherry & Karaikal",
+        "country": "India"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2,
+              8.1
+            ],
+            [
+              77.8,
+              8.6
+            ],
+            [
+              79.2,
+              9.3
+            ],
+            [
+              79.9,
+              10.3
+            ],
+            [
+              79.8,
+              11.5
+            ],
+            [
+              80.3,
+              13.4
+            ],
+            [
+              79.5,
+              13.2
+            ],
+            [
+              78.2,
+              12.8
+            ],
+            [
+              77.2,
+              11.5
+            ],
+            [
+              77.1,
+              9.5
+            ],
+            [
+              77.2,
+              8.1
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "IN-AP",
+      "properties": {
+        "state_id": "IN-AP",
+        "state_name": "Andhra Pradesh",
+        "category": "State",
+        "met_subdivision": "Coastal Andhra Pradesh & Yanam / Rayalaseema",
+        "country": "India"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.8,
+              13.4
+            ],
+            [
+              80.4,
+              15.8
+            ],
+            [
+              82.2,
+              16.9
+            ],
+            [
+              83.4,
+              17.7
+            ],
+            [
+              84.4,
+              18.9
+            ],
+            [
+              83.8,
+              18.8
+            ],
+            [
+              82.5,
+              18.0
+            ],
+            [
+              81.2,
+              17.5
+            ],
+            [
+              79.8,
+              16.5
+            ],
+            [
+              78.5,
+              15.8
+            ],
+            [
+              77.5,
+              14.5
+            ],
+            [
+              78.5,
+              13.4
+            ],
+            [
+              79.8,
+              13.4
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "IN-TG",
+      "properties": {
+        "state_id": "IN-TG",
+        "state_name": "Telangana",
+        "category": "State",
+        "met_subdivision": "Telangana",
+        "country": "India"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.3,
+              17.8
+            ],
+            [
+              78.5,
+              19.8
+            ],
+            [
+              79.9,
+              19.8
+            ],
+            [
+              80.7,
+              18.8
+            ],
+            [
+              81.2,
+              17.6
+            ],
+            [
+              80.5,
+              16.8
+            ],
+            [
+              79.2,
+              16.2
+            ],
+            [
+              77.7,
+              16.5
+            ],
+            [
+              77.3,
+              17.8
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "IN-GJ",
+      "properties": {
+        "state_id": "IN-GJ",
+        "state_name": "Gujarat",
+        "category": "State",
+        "met_subdivision": "Gujarat Region / Saurashtra & Kutch",
+        "country": "India"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              68.2,
+              23.8
+            ],
+            [
+              71.0,
+              24.5
+            ],
+            [
+              72.8,
+              24.4
+            ],
+            [
+              73.5,
+              22.8
+            ],
+            [
+              73.0,
+              20.4
+            ],
+            [
+              72.7,
+              21.1
+            ],
+            [
+              71.5,
+              20.8
+            ],
+            [
+              69.0,
+              22.3
+            ],
+            [
+              68.8,
+              23.2
+            ],
+            [
+              68.2,
+              23.8
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "IN-RJ",
+      "properties": {
+        "state_id": "IN-RJ",
+        "state_name": "Rajasthan",
+        "category": "State",
+        "met_subdivision": "West Rajasthan / East Rajasthan",
+        "country": "India"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              69.5,
+              27.0
+            ],
+            [
+              70.5,
+              28.5
+            ],
+            [
+              72.5,
+              30.0
+            ],
+            [
+              74.5,
+              30.2
+            ],
+            [
+              76.8,
+              28.5
+            ],
+            [
+              77.8,
+              27.5
+            ],
+            [
+              77.5,
+              26.2
+            ],
+            [
+              76.5,
+              24.5
+            ],
+            [
+              74.0,
+              23.5
+            ],
+            [
+              72.5,
+              24.5
+            ],
+            [
+              70.5,
+              25.5
+            ],
+            [
+              69.5,
+              27.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "IN-MP",
+      "properties": {
+        "state_id": "IN-MP",
+        "state_name": "Madhya Pradesh",
+        "category": "State",
+        "met_subdivision": "West Madhya Pradesh / East Madhya Pradesh",
+        "country": "India"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.0,
+              23.5
+            ],
+            [
+              75.5,
+              25.0
+            ],
+            [
+              78.0,
+              26.8
+            ],
+            [
+              80.5,
+              25.2
+            ],
+            [
+              82.5,
+              24.5
+            ],
+            [
+              82.2,
+              22.0
+            ],
+            [
+              80.5,
+              21.5
+            ],
+            [
+              76.5,
+              21.5
+            ],
+            [
+              74.5,
+              21.5
+            ],
+            [
+              74.0,
+              23.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "IN-UP",
+      "properties": {
+        "state_id": "IN-UP",
+        "state_name": "Uttar Pradesh",
+        "category": "State",
+        "met_subdivision": "West Uttar Pradesh / East Uttar Pradesh",
+        "country": "India"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2,
+              28.0
+            ],
+            [
+              77.5,
+              30.2
+            ],
+            [
+              79.8,
+              29.0
+            ],
+            [
+              82.5,
+              28.0
+            ],
+            [
+              84.3,
+              27.2
+            ],
+            [
+              84.2,
+              25.5
+            ],
+            [
+              83.0,
+              24.0
+            ],
+            [
+              81.5,
+              25.0
+            ],
+            [
+              78.5,
+              25.0
+            ],
+            [
+              77.5,
+              27.5
+            ],
+            [
+              77.2,
+              28.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "IN-BR",
+      "properties": {
+        "state_id": "IN-BR",
+        "state_name": "Bihar",
+        "category": "State",
+        "met_subdivision": "Bihar",
+        "country": "India"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              83.3,
+              25.2
+            ],
+            [
+              84.2,
+              27.5
+            ],
+            [
+              85.5,
+              27.3
+            ],
+            [
+              88.0,
+              26.5
+            ],
+            [
+              87.8,
+              25.2
+            ],
+            [
+              86.5,
+              24.5
+            ],
+            [
+              83.8,
+              24.6
+            ],
+            [
+              83.3,
+              25.2
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "IN-WB",
+      "properties": {
+        "state_id": "IN-WB",
+        "state_name": "West Bengal",
+        "category": "State",
+        "met_subdivision": "Sub-Himalayan West Bengal / Gangetic West Bengal",
+        "country": "India"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              86.5,
+              22.0
+            ],
+            [
+              86.8,
+              24.0
+            ],
+            [
+              88.0,
+              25.0
+            ],
+            [
+              88.2,
+              27.2
+            ],
+            [
+              89.8,
+              26.8
+            ],
+            [
+              89.0,
+              25.2
+            ],
+            [
+              88.8,
+              22.5
+            ],
+            [
+              88.2,
+              21.6
+            ],
+            [
+              87.5,
+              21.6
+            ],
+            [
+              86.5,
+              22.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "IN-OR",
+      "properties": {
+        "state_id": "IN-OR",
+        "state_name": "Odisha",
+        "category": "State",
+        "met_subdivision": "Odisha",
+        "country": "India"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              84.0,
+              19.0
+            ],
+            [
+              85.0,
+              19.8
+            ],
+            [
+              86.8,
+              20.8
+            ],
+            [
+              87.2,
+              21.6
+            ],
+            [
+              86.2,
+              22.5
+            ],
+            [
+              84.5,
+              22.5
+            ],
+            [
+              82.8,
+              20.5
+            ],
+            [
+              81.5,
+              18.2
+            ],
+            [
+              83.2,
+              18.5
+            ],
+            [
+              84.0,
+              19.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "IN-DL",
+      "properties": {
+        "state_id": "IN-DL",
+        "state_name": "Delhi",
+        "category": "Union Territory",
+        "met_subdivision": "Haryana, Chandigarh & Delhi",
+        "country": "India"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.85,
+              28.45
+            ],
+            [
+              76.9,
+              28.85
+            ],
+            [
+              77.35,
+              28.85
+            ],
+            [
+              77.35,
+              28.45
+            ],
+            [
+              76.85,
+              28.45
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "IN-AS",
+      "properties": {
+        "state_id": "IN-AS",
+        "state_name": "Assam",
+        "category": "State",
+        "met_subdivision": "Assam & Meghalaya",
+        "country": "India"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              89.8,
+              26.0
+            ],
+            [
+              90.5,
+              26.8
+            ],
+            [
+              93.5,
+              27.0
+            ],
+            [
+              95.8,
+              27.8
+            ],
+            [
+              95.2,
+              26.8
+            ],
+            [
+              93.5,
+              25.8
+            ],
+            [
+              92.5,
+              24.8
+            ],
+            [
+              91.0,
+              25.5
+            ],
+            [
+              89.8,
+              26.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "IN-PB",
+      "properties": {
+        "state_id": "IN-PB",
+        "state_name": "Punjab",
+        "category": "State",
+        "met_subdivision": "Punjab",
+        "country": "India"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.0,
+              30.0
+            ],
+            [
+              74.5,
+              32.2
+            ],
+            [
+              76.0,
+              32.5
+            ],
+            [
+              76.8,
+              31.0
+            ],
+            [
+              76.0,
+              29.8
+            ],
+            [
+              74.5,
+              29.8
+            ],
+            [
+              74.0,
+              30.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "IN-HR",
+      "properties": {
+        "state_id": "IN-HR",
+        "state_name": "Haryana",
+        "category": "State",
+        "met_subdivision": "Haryana, Chandigarh & Delhi",
+        "country": "India"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.5,
+              29.8
+            ],
+            [
+              76.0,
+              30.8
+            ],
+            [
+              77.3,
+              30.4
+            ],
+            [
+              77.5,
+              28.2
+            ],
+            [
+              76.2,
+              27.8
+            ],
+            [
+              75.5,
+              28.5
+            ],
+            [
+              74.5,
+              29.8
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "IN-JK",
+      "properties": {
+        "state_id": "IN-JK",
+        "state_name": "Jammu & Kashmir",
+        "category": "Union Territory",
+        "met_subdivision": "Jammu & Kashmir and Ladakh",
+        "country": "India"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8,
+              33.2
+            ],
+            [
+              74.2,
+              34.8
+            ],
+            [
+              75.5,
+              35.0
+            ],
+            [
+              76.2,
+              33.5
+            ],
+            [
+              74.8,
+              32.5
+            ],
+            [
+              73.8,
+              33.2
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "IN-LA",
+      "properties": {
+        "state_id": "IN-LA",
+        "state_name": "Ladakh",
+        "category": "Union Territory",
+        "met_subdivision": "Jammu & Kashmir and Ladakh",
+        "country": "India"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.0,
+              34.0
+            ],
+            [
+              77.5,
+              35.8
+            ],
+            [
+              79.5,
+              34.5
+            ],
+            [
+              78.8,
+              32.5
+            ],
+            [
+              76.8,
+              33.2
+            ],
+            [
+              76.0,
+              34.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "IN-HP",
+      "properties": {
+        "state_id": "IN-HP",
+        "state_name": "Himachal Pradesh",
+        "category": "State",
+        "met_subdivision": "Himachal Pradesh",
+        "country": "India"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              75.8,
+              31.5
+            ],
+            [
+              76.5,
+              33.2
+            ],
+            [
+              78.5,
+              32.8
+            ],
+            [
+              78.8,
+              31.2
+            ],
+            [
+              77.5,
+              30.5
+            ],
+            [
+              75.8,
+              31.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "IN-UT",
+      "properties": {
+        "state_id": "IN-UT",
+        "state_name": "Uttarakhand",
+        "category": "State",
+        "met_subdivision": "Uttarakhand",
+        "country": "India"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.8,
+              30.5
+            ],
+            [
+              79.2,
+              31.4
+            ],
+            [
+              80.8,
+              30.2
+            ],
+            [
+              80.2,
+              28.8
+            ],
+            [
+              79.0,
+              29.2
+            ],
+            [
+              77.8,
+              30.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "IN-GA",
+      "properties": {
+        "state_id": "IN-GA",
+        "state_name": "Goa",
+        "category": "State",
+        "met_subdivision": "Konkan & Goa",
+        "country": "India"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.7,
+              15.8
+            ],
+            [
+              74.2,
+              15.8
+            ],
+            [
+              74.3,
+              15.0
+            ],
+            [
+              73.7,
+              15.0
+            ],
+            [
+              73.7,
+              15.8
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "IN-SK",
+      "properties": {
+        "state_id": "IN-SK",
+        "state_name": "Sikkim",
+        "category": "State",
+        "met_subdivision": "Sub-Himalayan West Bengal & Sikkim",
+        "country": "India"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.0,
+              27.2
+            ],
+            [
+              88.8,
+              28.1
+            ],
+            [
+              88.9,
+              27.2
+            ],
+            [
+              88.0,
+              27.2
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "IN-ML",
+      "properties": {
+        "state_id": "IN-ML",
+        "state_name": "Meghalaya",
+        "category": "State",
+        "met_subdivision": "Assam & Meghalaya",
+        "country": "India"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              89.8,
+              25.2
+            ],
+            [
+              90.5,
+              26.0
+            ],
+            [
+              92.5,
+              25.8
+            ],
+            [
+              92.5,
+              25.1
+            ],
+            [
+              89.8,
+              25.2
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "IN-TR",
+      "properties": {
+        "state_id": "IN-TR",
+        "state_name": "Tripura",
+        "category": "State",
+        "met_subdivision": "NMMT (Nagaland, Manipur, Mizoram, Tripura)",
+        "country": "India"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              91.2,
+              23.0
+            ],
+            [
+              91.4,
+              24.5
+            ],
+            [
+              92.2,
+              24.3
+            ],
+            [
+              91.9,
+              23.0
+            ],
+            [
+              91.2,
+              23.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "IN-MZ",
+      "properties": {
+        "state_id": "IN-MZ",
+        "state_name": "Mizoram",
+        "category": "State",
+        "met_subdivision": "NMMT",
+        "country": "India"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              92.3,
+              22.0
+            ],
+            [
+              92.5,
+              24.3
+            ],
+            [
+              93.4,
+              23.8
+            ],
+            [
+              93.0,
+              22.0
+            ],
+            [
+              92.3,
+              22.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "IN-MN",
+      "properties": {
+        "state_id": "IN-MN",
+        "state_name": "Manipur",
+        "category": "State",
+        "met_subdivision": "NMMT",
+        "country": "India"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              93.0,
+              23.8
+            ],
+            [
+              93.5,
+              25.6
+            ],
+            [
+              94.5,
+              25.2
+            ],
+            [
+              94.3,
+              23.8
+            ],
+            [
+              93.0,
+              23.8
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "IN-NL",
+      "properties": {
+        "state_id": "IN-NL",
+        "state_name": "Nagaland",
+        "category": "State",
+        "met_subdivision": "NMMT",
+        "country": "India"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              93.5,
+              25.6
+            ],
+            [
+              94.5,
+              27.0
+            ],
+            [
+              95.2,
+              26.8
+            ],
+            [
+              94.5,
+              25.2
+            ],
+            [
+              93.5,
+              25.6
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "IN-AR",
+      "properties": {
+        "state_id": "IN-AR",
+        "state_name": "Arunachal Pradesh",
+        "category": "State",
+        "met_subdivision": "Arunachal Pradesh",
+        "country": "India"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              91.5,
+              27.5
+            ],
+            [
+              93.0,
+              29.0
+            ],
+            [
+              96.5,
+              29.5
+            ],
+            [
+              97.4,
+              28.0
+            ],
+            [
+              95.8,
+              27.8
+            ],
+            [
+              93.5,
+              27.0
+            ],
+            [
+              91.5,
+              27.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "IN-CT",
+      "properties": {
+        "state_id": "IN-CT",
+        "state_name": "Chhattisgarh",
+        "category": "State",
+        "met_subdivision": "Chhattisgarh",
+        "country": "India"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.2,
+              21.3
+            ],
+            [
+              81.5,
+              23.5
+            ],
+            [
+              83.5,
+              23.8
+            ],
+            [
+              84.0,
+              22.5
+            ],
+            [
+              82.5,
+              19.5
+            ],
+            [
+              81.2,
+              17.8
+            ],
+            [
+              80.5,
+              19.0
+            ],
+            [
+              80.2,
+              21.3
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "IN-JH",
+      "properties": {
+        "state_id": "IN-JH",
+        "state_name": "Jharkhand",
+        "category": "State",
+        "met_subdivision": "Jharkhand",
+        "country": "India"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              83.5,
+              23.8
+            ],
+            [
+              84.0,
+              24.8
+            ],
+            [
+              87.5,
+              25.0
+            ],
+            [
+              87.8,
+              23.8
+            ],
+            [
+              86.5,
+              22.2
+            ],
+            [
+              84.5,
+              22.5
+            ],
+            [
+              83.5,
+              23.8
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

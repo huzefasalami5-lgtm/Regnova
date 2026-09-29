@@ -1,0 +1,158 @@
+{
+  "type": "FeatureCollection",
+  "name": "South_Asia_Monsoon_Domain_REGNOVA",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Indian Ocean Basin",
+        "type": "Ocean"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              50.0,
+              -10.0
+            ],
+            [
+              105.0,
+              -10.0
+            ],
+            [
+              105.0,
+              5.0
+            ],
+            [
+              90.0,
+              10.0
+            ],
+            [
+              75.0,
+              5.0
+            ],
+            [
+              50.0,
+              5.0
+            ],
+            [
+              50.0,
+              -10.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Arabian Sea",
+        "type": "Sea"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              58.0,
+              8.0
+            ],
+            [
+              73.0,
+              8.0
+            ],
+            [
+              73.0,
+              24.0
+            ],
+            [
+              68.0,
+              24.0
+            ],
+            [
+              58.0,
+              18.0
+            ],
+            [
+              58.0,
+              8.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bay of Bengal",
+        "type": "Bay"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.0,
+              8.0
+            ],
+            [
+              95.0,
+              8.0
+            ],
+            [
+              95.0,
+              22.0
+            ],
+            [
+              86.0,
+              22.0
+            ],
+            [
+              80.0,
+              14.0
+            ],
+            [
+              80.0,
+              8.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tibetan Plateau",
+        "type": "Highland"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.0,
+              29.0
+            ],
+            [
+              95.0,
+              29.0
+            ],
+            [
+              95.0,
+              36.0
+            ],
+            [
+              78.0,
+              36.0
+            ],
+            [
+              78.0,
+              29.0
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
