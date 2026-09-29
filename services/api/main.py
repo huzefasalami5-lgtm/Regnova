@@ -573,7 +573,7 @@ def run_forecast_correction(req: ForecastRunRequest, db: Session = Depends(get_d
             lead_time_hours=req.lead_time_hours,
             data_mode=req.data_mode.value,
             primary_regime=regime_res.primary_regime.value,
-            regime_probabilities=regime_res.regime_probabilities.model_dump(mode="json"),
+            regime_probabilities=regime_res.probabilities.model_dump(mode="json") if hasattr(regime_res.probabilities, "model_dump") else regime_res.probabilities,
             gating_weights=regime_res.gating_weights,
             model_version="REGNOVA-v1.0.0",
         )
