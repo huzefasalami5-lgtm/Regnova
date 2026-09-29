@@ -92,3 +92,26 @@ This performs:
 4. EXPERT-MIX specialist model training and fusion.
 5. RAIN-CAL probability calibration.
 6. Geospatial district map rendering and independent backtesting verification.
+
+---
+
+## ☁️ Cloud Deployment Guide
+
+### Deploying Frontend to Vercel
+1. Go to [Vercel](https://vercel.com) and click **"Add New Project"**.
+2. Import repository: `https://github.com/huzefasalami5-lgtm/Regnova.git`.
+3. Vercel will automatically detect Vite settings from `vercel.json`.
+4. (Optional) Set Environment Variables:
+   - `VITE_API_URL`: `https://your-backend-api.onrender.com` (or leave empty to use Vercel automatic proxy rewrite in `vercel.json`).
+5. Click **Deploy**.
+
+### Deploying Backend to Render / Cloud
+1. Create a **Web Service** on [Render](https://render.com).
+2. Connect repository: `https://github.com/huzefasalami5-lgtm/Regnova.git`.
+3. Set Build Command: `pip install -r requirements.txt`
+4. Set Start Command: `uvicorn services.api.main:app --host 0.0.0.0 --port $PORT`
+5. Configure Environment Variables:
+   - `SUPABASE_DB_URL`: PostgreSQL connection string (Session Pooler)
+   - `SUPABASE_URL`: Supabase project URL
+   - `SUPABASE_ANON_KEY`: Supabase anon public key
+

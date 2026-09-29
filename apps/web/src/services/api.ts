@@ -9,7 +9,8 @@ import {
   DataMode,
 } from '../types';
 
-const API_BASE = '/api/v1';
+const API_ROOT = import.meta.env.VITE_API_URL || import.meta.env.VITE_API_BASE_URL || '';
+const API_BASE = API_ROOT ? `${API_ROOT.replace(/\/+$/, '')}/api/v1` : '/api/v1';
 
 export const api = {
   async getHealth(): Promise<HealthCheckResponse> {
