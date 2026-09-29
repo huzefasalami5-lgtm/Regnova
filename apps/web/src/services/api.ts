@@ -337,6 +337,8 @@ export const api = {
       pipeline: agent,
       regime: forecast.regime_summary,
       forecast_run_id: forecast.forecast_run_id,
+      evaluation_id: evaluation.evaluation_id,
+      agent_run_id: agent.run_id,
       districts_corrected: forecast.districts.length,
       evaluation_benchmark: {
         raw_nwp_rmse: evaluation.raw_nwp_metrics.rmse_mm,
